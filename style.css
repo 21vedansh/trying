@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+.greet-container {
+  display: flex;
+  background-color: oklch(98.463% 0.00181 249.248);
+  justify-content: center;
+}
+.hero-section {
+  text-align: center;
+  height: 100vh;
+  width: 700px;
+  background-color: oklch(98.463% 0.00181 249.248);
+  position: relative;
+}
+.hero-section:hover .circle-1 {
+  top: -220px;
+  left: -220px;
+}
+.hero-section:hover .circle-2 {
+  right: -110px;
+  bottom: -200px;
+}
+.greet {
+  font-weight: 300;
+  font-size: 89px;
+  letter-spacing: -5px;
+  margin: 250px 0 10px 0;
+}
+.sub-text {
+  margin-bottom: 90px;
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+.breaks {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+.circle-1 {
+  background-color: black;
+  height: 600px;
+  width: 600px;
+  border-radius: 300px;
+  position: fixed;
+  top: -600px;
+  left: -600px;
+  transition:
+    top 0.7s,
+    left 0.7s;
+}
+.circle-2 {
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  border-radius: 250px;
+  position: fixed;
+  right: -500px;
+  bottom: -500px;
+  transition:
+    right 0.7s,
+    bottom 0.7s;
+}
+.btn {
+  font-size: 35px;
+  padding: 19px 53px;
+  letter-spacing: -1px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 10px 10px 1px black;
+  transition:
+    margin-top 0.1s,
+    margin-left 0.1s,
+    box-shadow 0.1s;
+}
+.btn:active {
+  margin-top: 10px;
+  margin-left: 10px;
+  box-shadow: none;
+}
